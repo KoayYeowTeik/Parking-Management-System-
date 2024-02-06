@@ -14,10 +14,7 @@ namespace ParkingManagementSystem
         {
             this.parkRecords = parkRecords;
         }
-        public void AddRecord()
-        {
-
-        }
+        public void AddRecord() { }
         public decimal CalculateCharge()
         {
             return 0;

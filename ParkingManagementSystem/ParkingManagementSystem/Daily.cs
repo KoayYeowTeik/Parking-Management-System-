@@ -8,6 +8,6 @@ namespace ParkingManagementSystem
 {
     public class Daily : ParkingPass
     {
-        public int chargeRate { get; set; }
+        public decimal chargeRate { get; set; }
     }
 }

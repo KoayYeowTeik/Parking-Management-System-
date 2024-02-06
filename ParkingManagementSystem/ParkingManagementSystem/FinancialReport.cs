@@ -8,14 +8,16 @@ namespace ParkingManagementSystem
 {
     public class FinancialReport
     {
-        public double StaffRevenue { get; private set; }
-        public double StudentRevenue { get; private set; }
+        public decimal staffRevenue { get; private set; }
+        public decimal studentRevenue { get; private set; }
+        public decimal totalRevenue { get; private set; }    
         public FinancialReport() { }   
 
-        public FinancialReport(double staffRevenue, double studentRevenue)
+        public FinancialReport(decimal staffRevenue, decimal studentRevenue, decimal totalRevenue)
         {
-            StaffRevenue = staffRevenue;
-            StudentRevenue = studentRevenue;
+            this.staffRevenue = staffRevenue;
+            this.studentRevenue = studentRevenue;
+            this.totalRevenue = totalRevenue;
         }
 
         // This method would calculate and create the financial report
