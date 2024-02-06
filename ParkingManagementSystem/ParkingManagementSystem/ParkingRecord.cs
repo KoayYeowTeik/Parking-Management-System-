@@ -8,31 +8,42 @@ namespace ParkingManagementSystem
 {
     public class ParkingRecord
     {
-        public int id { get; set; }
-        public Vehicle vehicle { get; set; }
-        public DateTime entryDateTime { get; set; }
-        public DateTime exitDateTime { get; set; }
-        public decimal amountCharged { get; set; }
-        public Carpark carpark { get; set; }
-        public PaymentMode paymentMode { get; set; }
+        // Properties with private setters for encapsulation
+        public int Id { get; private set; }
+        public Vehicle Vehicle { get; private set; }
+        public DateTime EntryDateTime { get; private set; }
+        public DateTime ExitDateTime { get; private set; }
+        public decimal AmountCharged { get; private set; }
+        public Carpark Carpark { get; private set; }
+        public PaymentMode PaymentMode { get; private set; }
+
         public ParkingRecord() { }
+
+        // Constructor to initialize all properties
         public ParkingRecord(int id, Vehicle vehicle, DateTime entryDateTime, DateTime exitDateTime, decimal amountCharged, Carpark carpark, PaymentMode paymentMode)
         {
-            this.id = id;
-            this.vehicle = vehicle;
-            this.entryDateTime = entryDateTime;
-            this.exitDateTime = exitDateTime;
-            this.amountCharged = amountCharged;
-            this.carpark = carpark;
-            this.paymentMode = paymentMode;
+            Id = id;
+            Vehicle = vehicle;
+            EntryDateTime = entryDateTime;
+            ExitDateTime = exitDateTime;
+            AmountCharged = amountCharged;
+            Carpark = carpark;
+            PaymentMode = paymentMode;
         }
+
+        // Method to check if the vehicle is currently parked
         public bool IsParked()
         {
-            return false;
+            // Assuming that if the exit date time is default, the vehicle is still parked
+            return ExitDateTime == default(DateTime);
         }
+
+        // Method to check if the vehicle has exited
         public bool IsExited()
         {
-            return false;
+            // Assuming that if the exit date time is set, the vehicle has exited
+            return ExitDateTime != default(DateTime);
         }
     }
 }
+
