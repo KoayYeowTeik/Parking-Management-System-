@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "igUPYD5TisfSTc+wam8G0hxfJJcgPrdikZupBQatYdSYlXeUiSitJ8Y1XOJAMbUAzRM5bAzVTzmsrJT+PqltNA==",
+  "dgSpecHash": "16Cp0r4/yJRl4RLUlJUfiaMY+xFfjfuGlsmRdBF25XiD94vBQxHtKVMjNxIu4iRUO+6KyogAAv8fGG7fMrIzAQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\koayy\\Source\\Repos\\Parking-Management-System-\\ParkingManagementSystem\\ParkingManagementSystem\\ParkingManagementSystem.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\koayy\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.19\\microsoft.windowsdesktop.app.ref.6.0.19.nupkg.sha512",
-    "C:\\Users\\koayy\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.19\\microsoft.netcore.app.ref.6.0.19.nupkg.sha512",
-    "C:\\Users\\koayy\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.19\\microsoft.aspnetcore.app.ref.6.0.19.nupkg.sha512",
-    "C:\\Users\\koayy\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.19\\microsoft.netcore.app.host.win-x64.6.0.19.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\gerherx\\Source\\Repos\\Parking-Management-System-\\ParkingManagementSystem\\ParkingManagementSystem\\ParkingManagementSystem.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

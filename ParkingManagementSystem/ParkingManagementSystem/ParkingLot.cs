@@ -19,9 +19,12 @@ namespace ParkingManagementSystem
             this.vehicle = vehicle;
             this.occupied = false;
         }
+        
         public string GetLocationDescription()
         {
-            return null;
+            string locationDesc = string.Empty;
+            //implementation
+            return locationDesc;
         }
     }
 }
