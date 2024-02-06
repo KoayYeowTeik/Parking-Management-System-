@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace ParkingManagementSystem
 {
-    internal interface PPState
+    public interface PPState
     {
+        void enterCarpark();
+
+        void exitCarpark();
+
+        void renew();
+
+        void terminate(string reason);
     }
 }
