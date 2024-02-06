@@ -23,8 +23,7 @@ namespace ParkingManagementSystem
         // This method would calculate and create the financial report
         public void CreateReport()
         {
-            // Implementation to create the report goes here
-            // It could involve calculating totals, formatting the report, etc.
+            // Implementation
         }
     }
 }
