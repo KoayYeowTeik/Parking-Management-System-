@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace ParkingManagementSystem
 {
-    public interface Subject
+    internal interface PPState
     {
-        public void NotifyObservers() { }
-        public void AddObserver(int id) { }
-        public void RemoveObserver(int id) { }
     }
 }

@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace ParkingManagementSystem
 {
-    internal class WaitingPassCollection
+    public class WaitingPassCollection
     {
+        public List<Monthly> waitingPass;
+        public WaitingPassCollection() { }
+        public WaitingPassCollection(List<Monthly> waitingPass) {  this.waitingPass = waitingPass; }
+        public void AddWaitingPass() { }
     }
 }

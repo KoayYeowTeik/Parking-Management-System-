@@ -30,5 +30,6 @@ namespace ParkingManagementSystem
         {
             return false;
         }
+        public void Update() { }
     }
 }

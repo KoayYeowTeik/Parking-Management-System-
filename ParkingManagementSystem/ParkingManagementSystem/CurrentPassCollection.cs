@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace ParkingManagementSystem
 {
-    internal class CurrentPassCollection
+    public  class CurrentPassCollection
     {
+        public List<Monthly> currentPass;
+        public CurrentPassCollection() { }
+        public CurrentPassCollection(List<Monthly> currentPass)
+        {
+            this.currentPass = new List<Monthly>();
+        }
+        public void RenewPass() { }
     }
 }

@@ -10,6 +10,7 @@ namespace ParkingManagementSystem
     {
         public double StaffRevenue { get; private set; }
         public double StudentRevenue { get; private set; }
+        public FinancialReport() { }   
 
         public FinancialReport(double staffRevenue, double studentRevenue)
         {

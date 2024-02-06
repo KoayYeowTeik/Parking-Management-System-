@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace ParkingManagementSystem
 {
-    internal class Observer
+    public interface Observer
     {
+        public void update() { }
     }
 }

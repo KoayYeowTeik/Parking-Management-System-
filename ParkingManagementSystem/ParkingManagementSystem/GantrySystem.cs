@@ -22,7 +22,7 @@ namespace ParkingManagementSystem
         {
             return 0;
         }
-        public decimal CalculateRevenu()
+        public decimal CalculateRevenue()
         {
             return 0;
         }

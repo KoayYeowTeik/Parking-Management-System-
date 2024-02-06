@@ -11,7 +11,7 @@ namespace ParkingManagementSystem
         public int id { get; set; }
         public VehicleType vehicle { get; set; }
         public bool occupied { get; set; }
-
+       
         public ParkingLot() { } 
         public ParkingLot(int id, VehicleType vehicle)
         {

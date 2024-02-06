@@ -15,12 +15,11 @@ namespace ParkingManagementSystem
         public DateTime ExitDateTime { get; private set; }
         public decimal AmountCharged { get; private set; }
         public Carpark Carpark { get; private set; }
-        public PaymentMode PaymentMode { get; private set; }
 
         public ParkingRecord() { }
 
         // Constructor to initialize all properties
-        public ParkingRecord(int id, Vehicle vehicle, DateTime entryDateTime, DateTime exitDateTime, decimal amountCharged, Carpark carpark, PaymentMode paymentMode)
+        public ParkingRecord(int id, Vehicle vehicle, DateTime entryDateTime, DateTime exitDateTime, decimal amountCharged, Carpark carpark)
         {
             Id = id;
             Vehicle = vehicle;
@@ -28,7 +27,6 @@ namespace ParkingManagementSystem
             ExitDateTime = exitDateTime;
             AmountCharged = amountCharged;
             Carpark = carpark;
-            PaymentMode = paymentMode;
         }
 
         // Method to check if the vehicle is currently parked
