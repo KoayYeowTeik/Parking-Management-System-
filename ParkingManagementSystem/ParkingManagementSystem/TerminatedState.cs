@@ -10,6 +10,11 @@ namespace ParkingManagementSystem
 	{
 		private ParkingPass myParkingPass;
 
+		public void approvePass()
+		{
+			Console.WriteLine("Parking pass is terminated");
+		}
+
 		public TerminatedState(ParkingPass myParkingPass)
 		{
 			this.myParkingPass = myParkingPass;

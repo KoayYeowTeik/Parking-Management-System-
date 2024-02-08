@@ -12,9 +12,10 @@ namespace ParkingManagementSystem
         public DateTime startDateTime { get; set; }
         public DateTime endDateTime { get; set; }
         public bool isParked { get; set; }
-
+        public string passType { get; set; }
+        public int userID { get; set; }
         //public MonthlyPassStatus status { get; set; }
-        public PaymentMode paymentMode { get; set; }
+        //public PaymentMode paymentMode { get; set; }
         //public SeasonPassManager seasonPassManager { get; set; }
         public ParkingPass() { }
 
@@ -35,9 +36,11 @@ namespace ParkingManagementSystem
         private PPState validState;
         private PPState expiredState;
         private PPState terminatedState;
+        private PPState processingState;
 
         private PPState state;
 
+        public PPState ProcessingState { get { return processingState; } }
         public PPState ValidState { get { return validState;  } }
         public PPState ExpiredState {  get { return expiredState; } }
         public PPState TerminatedState {  get { return terminatedState; } }
@@ -47,14 +50,16 @@ namespace ParkingManagementSystem
             this.state = state;
         }
 
-		public ParkingPass(int id, DateTime startDateTime, DateTime endDateTime, bool Parked, PaymentMode paymentMode)
+		public ParkingPass(int id, DateTime startDateTime, DateTime endDateTime, string passType, int userID) //PaymentMode paymentMode)
 		{
 			this.id = id;
 			this.startDateTime = startDateTime;
 			this.endDateTime = endDateTime;
-			this.isParked = Parked;
-			this.paymentMode = paymentMode;
+            this.passType = passType;
+            this.userID = userID;
+			//this.paymentMode = paymentMode;
 
+            processingState = new ProcessingState(this);
             validState = new ValidState(this);
             expiredState = new ExpiredState(this);
             terminatedState = new TerminatedState(this);
@@ -67,6 +72,11 @@ namespace ParkingManagementSystem
             {
                 state = validState;
             }
+        }
+
+        public void approvePass()
+        {
+            state.approvePass();
         }
 
         public void enterParking()

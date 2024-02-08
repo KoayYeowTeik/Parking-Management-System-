@@ -10,6 +10,11 @@ namespace ParkingManagementSystem
 	{
 		private ParkingPass myParkingPass;
 
+		public void approvePass()
+		{
+			Console.WriteLine("Parking pass is expired");
+		}
+
 		public ExpiredState(ParkingPass myParkingPass)
 		{
 			this.myParkingPass = myParkingPass;
@@ -22,20 +27,25 @@ namespace ParkingManagementSystem
 
 		public void exitCarpark()
 		{
-			Console.WriteLine("Parking pass is expired");
+			myParkingPass.isParked = false;
 		}
 
 		public void terminate(string reason)
 		{
 			Console.WriteLine(reason);
 			myParkingPass.setState(myParkingPass.TerminatedState);
-			myParkingPass.RefundRemainingPass();
+			CurrentPassCollection currentPassCollection = new CurrentPassCollection();
+			//myParkingPass.RefundRemainingPass();
 		}
 
 		public void renew()
 		{
-			//implementation
-			myParkingPass.setState(myParkingPass.ValidState);
+			if (myParkingPass.passType == "Daily")
+			{
+				myParkingPass.endDateTime.AddDays(1);
+				myParkingPass.setState(myParkingPass.ValidState);
+				Console.WriteLine("Daily season parking pass has been renewed.");
+			}
 		}
 	}
 }

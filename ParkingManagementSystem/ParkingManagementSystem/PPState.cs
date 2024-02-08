@@ -8,7 +8,9 @@ namespace ParkingManagementSystem
 {
     public interface PPState
     {
-        void enterCarpark();
+        void approvePass();
+
+		void enterCarpark();
 
         void exitCarpark();
 
