@@ -24,22 +24,23 @@ namespace ParkingManagementSystem
 
         public void TerminateSeasonPass(User user, int passId, string reason)
         {
-            // Assuming each Vehicle in vehicleList can have a ParkingPass
             var pass = user.vehicleList.SelectMany(v => v.ParkingPassList)
                                        .FirstOrDefault(p => p.id == passId);
-            if (pass == null || pass.status != MonthlyPassStatus.VALID)
+            if (pass == null)
             {
-                Console.WriteLine("No valid season parking pass found.");
+                Console.WriteLine("No season parking pass found.");
                 return;
             }
 
+            // Check if the pass is already expired using the endDateTime
             if (pass.endDateTime < DateTime.Now)
             {
                 Console.WriteLine("The pass has already expired and cannot be terminated.");
                 return;
             }
 
-            pass.status = MonthlyPassStatus.TERMINATED;
+            // Terminate the pass
+            pass.terminate(reason);
             Console.WriteLine($"Parking pass {pass.id} has been terminated.");
 
             if (pass.paymentMode == PaymentMode.DEBIT)
@@ -51,9 +52,10 @@ namespace ParkingManagementSystem
             SendConfirmation(user);
         }
 
+
         private void ProcessRefund(ParkingPass pass)
         {
-            // Implement refund logic
+            Console.WriteLine("Pass has been refunded");
         }
 
         private void UpdateAvailablePassesCount()
@@ -63,7 +65,7 @@ namespace ParkingManagementSystem
 
         private void SendConfirmation(User user)
         {
-            // Implement logic to send confirmation
+            Console.WriteLine("Your pass has been terminated successfully, thank you.");
         }
     }
 }
