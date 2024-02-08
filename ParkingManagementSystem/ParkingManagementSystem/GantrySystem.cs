@@ -54,7 +54,7 @@ namespace ParkingManagementSystem
         {
             
         }
-        public bool CheckPass(string)
+        public bool CheckPass(string pass)
         {
             //implementation
             return false;

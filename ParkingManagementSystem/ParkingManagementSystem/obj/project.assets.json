@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Katana\\.nuget\\packages\\": {}
+    "C:\\Users\\javie\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Katana\\Source\\Repos\\Parking-Management-System-\\ParkingManagementSystem\\ParkingManagementSystem\\ParkingManagementSystem.csproj",
+      "projectUniqueName": "C:\\Users\\javie\\source\\repos\\New folder (24)\\ParkingManagementSystem\\ParkingManagementSystem\\ParkingManagementSystem.csproj",
       "projectName": "ParkingManagementSystem",
-      "projectPath": "C:\\Users\\Katana\\Source\\Repos\\Parking-Management-System-\\ParkingManagementSystem\\ParkingManagementSystem\\ParkingManagementSystem.csproj",
-      "packagesPath": "C:\\Users\\Katana\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Katana\\Source\\Repos\\Parking-Management-System-\\ParkingManagementSystem\\ParkingManagementSystem\\obj\\",
+      "projectPath": "C:\\Users\\javie\\source\\repos\\New folder (24)\\ParkingManagementSystem\\ParkingManagementSystem\\ParkingManagementSystem.csproj",
+      "packagesPath": "C:\\Users\\javie\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\javie\\source\\repos\\New folder (24)\\ParkingManagementSystem\\ParkingManagementSystem\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Katana\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\javie\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -61,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

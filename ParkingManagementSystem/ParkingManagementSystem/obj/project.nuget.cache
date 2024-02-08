@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "Vve6CZuTlwNdB9aubdd1/uwxJIou8OlTcbXScYsyHUiOV4v3rWP+NkbOsB2WcHvwEo/5Oh9W72DEc//9OZUh+g==",
   "success": true,
   "projectFilePath": "C:\\Users\\Katana\\source\\repos\\Parking-Management-System-\\ParkingManagementSystem\\ParkingManagementSystem\\ParkingManagementSystem.csproj",
+=======
+  "dgSpecHash": "oB2mP11jfC/FuSwpwOn7qv/OwIkjr454n+aLuNuZmbcnJymRl89q5WqyKSdgGt3+/OPCc+4D7pwkyErxT0zMJA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\javie\\source\\repos\\New folder (24)\\ParkingManagementSystem\\ParkingManagementSystem\\ParkingManagementSystem.csproj",
+>>>>>>> c1296639401a025d0f785da006fba4feb3d27e31
   "expectedPackageFiles": [],
   "logs": []
 }
