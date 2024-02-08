@@ -1,31 +1,17 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "C:\\Users\\Katana\\source\\repos\\Parking-Management-System-\\ParkingManagementSystem\\ParkingManagementSystem\\ParkingManagementSystem.csproj": {}
+    "C:\\Users\\javie\\source\\repos\\New folder (25)\\ParkingManagementSystem\\ParkingManagementSystem\\ParkingManagementSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Katana\\source\\repos\\Parking-Management-System-\\ParkingManagementSystem\\ParkingManagementSystem\\ParkingManagementSystem.csproj": {
+    "C:\\Users\\javie\\source\\repos\\New folder (25)\\ParkingManagementSystem\\ParkingManagementSystem\\ParkingManagementSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Katana\\source\\repos\\Parking-Management-System-\\ParkingManagementSystem\\ParkingManagementSystem\\ParkingManagementSystem.csproj",
+        "projectUniqueName": "C:\\Users\\javie\\source\\repos\\New folder (25)\\ParkingManagementSystem\\ParkingManagementSystem\\ParkingManagementSystem.csproj",
         "projectName": "ParkingManagementSystem",
-        "projectPath": "C:\\Users\\Katana\\source\\repos\\Parking-Management-System-\\ParkingManagementSystem\\ParkingManagementSystem\\ParkingManagementSystem.csproj",
-        "packagesPath": "C:\\Users\\Katana\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Katana\\source\\repos\\Parking-Management-System-\\ParkingManagementSystem\\ParkingManagementSystem\\obj\\",
-=======
-    "C:\\Users\\javie\\source\\repos\\New folder (24)\\ParkingManagementSystem\\ParkingManagementSystem\\ParkingManagementSystem.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\javie\\source\\repos\\New folder (24)\\ParkingManagementSystem\\ParkingManagementSystem\\ParkingManagementSystem.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\javie\\source\\repos\\New folder (24)\\ParkingManagementSystem\\ParkingManagementSystem\\ParkingManagementSystem.csproj",
-        "projectName": "ParkingManagementSystem",
-        "projectPath": "C:\\Users\\javie\\source\\repos\\New folder (24)\\ParkingManagementSystem\\ParkingManagementSystem\\ParkingManagementSystem.csproj",
+        "projectPath": "C:\\Users\\javie\\source\\repos\\New folder (25)\\ParkingManagementSystem\\ParkingManagementSystem\\ParkingManagementSystem.csproj",
         "packagesPath": "C:\\Users\\javie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\javie\\source\\repos\\New folder (24)\\ParkingManagementSystem\\ParkingManagementSystem\\obj\\",
->>>>>>> c1296639401a025d0f785da006fba4feb3d27e31
+        "outputPath": "C:\\Users\\javie\\source\\repos\\New folder (25)\\ParkingManagementSystem\\ParkingManagementSystem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\javie\\AppData\\Roaming\\NuGet\\NuGet.Config",
