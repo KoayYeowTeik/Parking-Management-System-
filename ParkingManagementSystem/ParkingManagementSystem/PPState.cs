@@ -17,5 +17,5 @@ namespace ParkingManagementSystem
         void renew(MonthlyPassCollection collection);
 
         void terminate(string reason, MonthlyPassCollection collection);
-    }
+    }   
 }
