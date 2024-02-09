@@ -72,8 +72,47 @@ namespace ParkingManagementSystem
 
                         passManager.TerminateSeasonPass(user, passId, reason, monthlyPassCollection);
                         break;
+
+                    //UC-004 Koay Yeow Teik (Renew Season Pass)
                     case 2:
-                        // Add logic for renewing a season pass
+                        Console.Write("Enter UserID : "); int id = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Season passes of the user is displayed here");
+                        Console.Write("Enter Parking Pass to renew : "); int passid = Convert.ToInt32(Console.ReadLine());
+                        while (true)
+                        {
+                            // create fake pass to extend the date by
+                            ParkingPass pass1 = new ParkingPass(
+                         passid,
+                         DateTime.Now, // Assuming start date is now
+                         DateTime.Now.AddDays(30),
+                         "Monthly",
+                         id
+                         //assume pass was made recently 
+                     ) ;
+                            User user1 = new User
+                            {
+                                id = id,
+                                name = "Default Name",
+                                userType = UserType.STUDENT, 
+                                mobileNumber = "000-000-0000",
+                                username = "defaultUser",
+                                password = "defaultPassword",
+                                vehicleList = new List<Vehicle>()
+                            {
+                                new Vehicle("ABC123", VehicleType.CAR) // Example license plate and vehicle type
+                                {
+                                    ParkingPassList = new List<ParkingPass>() {  }
+                                }
+                            }
+                            };
+                            if (user1.MakePayment())
+                            {
+                                Console.WriteLine("Payment confirmed");
+                                pass1.endDateTime.AddDays(30);
+                                return;
+                            }
+                            Console.WriteLine("End of use case");
+                        }                        
                         break;
                     case 3:
                         // Add logic for making a payment
