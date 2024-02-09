@@ -45,9 +45,17 @@ namespace ParkingManagementSystem
         public PPState ExpiredState {  get { return expiredState; } }
         public PPState TerminatedState {  get { return terminatedState; } }
 
-        public void setState(PPState state)
+        public void setState(PPState state, MonthlyPassCollection collection)
         {
             this.state = state;
+            if (state == ExpiredState)
+            {
+                if (passType == "Monthly")
+                {
+                    collection.removeFromCurrentPass(this);
+                    Console.WriteLine("Pass is expired");
+                }
+            }
         }
 
 		public ParkingPass(int id, DateTime startDateTime, DateTime endDateTime, string passType, int userID) //PaymentMode paymentMode)
@@ -74,9 +82,9 @@ namespace ParkingManagementSystem
             }
         }
 
-        public void approvePass()
+        public void approvePass(MonthlyPassCollection collection)
         {
-            state.approvePass();
+            state.approvePass(collection);
         }
 
         public void enterParking()
@@ -89,14 +97,14 @@ namespace ParkingManagementSystem
             state.exitCarpark();
         }
 
-        public void renew()
+        public void renew(MonthlyPassCollection collection)
         {
-            state.renew();
+            state.renew(collection);
         }
 
-        public void terminate(string reasons)
+        public void terminate(string reasons, MonthlyPassCollection collection)
         {
-            state.terminate(reasons);
+            state.terminate(reasons, collection);
         }
 	}
 }
