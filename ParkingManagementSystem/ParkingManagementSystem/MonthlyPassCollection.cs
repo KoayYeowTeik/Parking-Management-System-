@@ -38,31 +38,31 @@ namespace ParkingManagementSystem
 			}
 		}
 
-		public void addToCurrentPass(ParkingPass pass, Observer observer)
+		public void addToCurrentPass(ParkingPass pass)
 		{
-			observers.Add(observer);
+			//observers.Add(observer);
 			currentPass.Add(pass);
 			availablePasses--;
 			notifyObservers();
 		}
 
-		public void removeFromCurrentPass(ParkingPass pass, Observer observer)
+		public void removeFromCurrentPass(ParkingPass pass)
 		{
-			observers.Remove(observer);
+			//observers.Remove(observer);
 			currentPass.Remove(pass);
 			availablePasses++;
 			notifyObservers();
 		}
 
-		public void addToWaitList(ParkingPass Pass, Observer observer)
+		public void addToWaitList(ParkingPass Pass)
 		{
-			observers.Remove(observer);
+			//observers.Remove(observer);
 			waitingList.Add(Pass);
 		}
 
-		public void removeFromWaitList(ParkingPass Pass, Observer observer)
+		public void removeFromWaitList(ParkingPass Pass)
 		{
-			observers.Remove(observer);
+			//observers.Remove(observer);
 			waitingList.Remove(Pass);
 		}
 	}

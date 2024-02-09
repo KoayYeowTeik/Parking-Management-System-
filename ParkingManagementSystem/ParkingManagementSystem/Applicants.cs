@@ -24,7 +24,6 @@ namespace ParkingManagementSystem
 		public Applicants(Subject mpc, string name, int npID, string username, string password, string mobileNumber, DateTime startDate, DateTime endDate, string paymentMode, string licensePlate, string iuNumber, string carType)
 		{
 			this.monthlyPassCollection = mpc;
-			monthlyPassCollection.addObserver(this);
 			this.name = name;
 			this.npID = npID;
 			this.username = username;
@@ -36,11 +35,12 @@ namespace ParkingManagementSystem
 			this.licensePlate = licensePlate;
 			this.iuNumber = iuNumber;
 			this.carType = carType;
+			monthlyPassCollection.addObserver(this);
 		}
 
 		public void Update(int passesLeft)
 		{
-			
+			Console.WriteLine("There is " + passesLeft + " monthly passes left.");
 		}
 	}
 }

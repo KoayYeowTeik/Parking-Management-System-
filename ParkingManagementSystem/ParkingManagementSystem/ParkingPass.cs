@@ -14,6 +14,7 @@ namespace ParkingManagementSystem
         public bool isParked { get; set; }
         public string passType { get; set; }
         public int userID { get; set; }
+        public Applicants applicant {  get; set; }
         //public MonthlyPassStatus status { get; set; }
         //public PaymentMode paymentMode { get; set; }
         //public SeasonPassManager seasonPassManager { get; set; }
@@ -65,6 +66,7 @@ namespace ParkingManagementSystem
 			this.endDateTime = endDateTime;
             this.passType = passType;
             this.userID = userID;
+            //this.applicant = applicants;
 			//this.paymentMode = paymentMode;
 
             processingState = new ProcessingState(this);
@@ -78,7 +80,7 @@ namespace ParkingManagementSystem
             }
             else
             {
-                state = validState;
+                state = processingState;
             }
         }
 

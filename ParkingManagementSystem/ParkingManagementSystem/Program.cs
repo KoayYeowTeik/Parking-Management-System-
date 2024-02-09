@@ -212,6 +212,7 @@ namespace ParkingManagementSystem
 
 					//System displays successful application
 					Console.WriteLine("Daily season pass has been created");
+                    parkingPass.setState(parkingPass.ProcessingState, collection);
 				}
                 else if (payment == false)
                 {
@@ -252,10 +253,13 @@ namespace ParkingManagementSystem
 
                     if (payment == true)
                     {
+						Applicants applicants = new Applicants(collection, name, userID, username, password, mobileNo, startDate, endDate, paymentMethod, licensePlate, iuNumber, carType);
 						//System creates parking pass in processing state
 						int id = 1;
 						ParkingPass parkingPass = new ParkingPass(id, startDate, endDate, passType, userID);
 						Console.WriteLine("Monthly season parking pass has been created.");
+                        parkingPass.setState(parkingPass.TerminatedState, collection);
+                        collection.addObserver(applicants);
 					}
                     else if (payment == false)
                     {
@@ -299,11 +303,14 @@ namespace ParkingManagementSystem
 
                         if (payment == true)
                         {
+							Applicants applicants = new Applicants(collection, name, userID, username, password, mobileNo, startDate, endDate, paymentMethod, licensePlate, iuNumber, carType);
 							//System creates parking pass in processing state
 							int id = 1;
 							ParkingPass parkingPass = new ParkingPass(id, startDate, endDate, passType, userID);
 							//collection.addToWaitList(parkingPass);
 							Console.WriteLine("Monthly season parking pass has been created");
+                            parkingPass.setState(parkingPass.ProcessingState, collection);
+							collection.addObserver(applicants);
 						}
                         else if (payment == false)
                         {
