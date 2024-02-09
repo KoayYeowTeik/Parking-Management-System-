@@ -66,3 +66,17 @@ C:\Users\javie\source\repos\New folder (25)\ParkingManagementSystem\ParkingManag
 C:\Users\javie\source\repos\New folder (25)\ParkingManagementSystem\ParkingManagementSystem\obj\Debug\net6.0\ParkingManagementSystem.pdb
 C:\Users\javie\source\repos\New folder (25)\ParkingManagementSystem\ParkingManagementSystem\obj\Debug\net6.0\ParkingManagementSystem.genruntimeconfig.cache
 C:\Users\javie\source\repos\New folder (25)\ParkingManagementSystem\ParkingManagementSystem\obj\Debug\net6.0\ref\ParkingManagementSystem.dll
+C:\Users\Katana\source\repos\Parking-Management-System-\ParkingManagementSystem\ParkingManagementSystem\obj\Debug\net6.0\ParkingManagementSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Katana\source\repos\Parking-Management-System-\ParkingManagementSystem\ParkingManagementSystem\obj\Debug\net6.0\ParkingManagementSystem.AssemblyInfoInputs.cache
+C:\Users\Katana\source\repos\Parking-Management-System-\ParkingManagementSystem\ParkingManagementSystem\obj\Debug\net6.0\ParkingManagementSystem.AssemblyInfo.cs
+C:\Users\Katana\source\repos\Parking-Management-System-\ParkingManagementSystem\ParkingManagementSystem\obj\Debug\net6.0\ParkingManagementSystem.csproj.CoreCompileInputs.cache
+C:\Users\Katana\source\repos\Parking-Management-System-\ParkingManagementSystem\ParkingManagementSystem\obj\Debug\net6.0\ParkingManagementSystem.dll
+C:\Users\Katana\source\repos\Parking-Management-System-\ParkingManagementSystem\ParkingManagementSystem\obj\Debug\net6.0\refint\ParkingManagementSystem.dll
+C:\Users\Katana\source\repos\Parking-Management-System-\ParkingManagementSystem\ParkingManagementSystem\obj\Debug\net6.0\ParkingManagementSystem.pdb
+C:\Users\Katana\source\repos\Parking-Management-System-\ParkingManagementSystem\ParkingManagementSystem\bin\Debug\net6.0\ParkingManagementSystem.exe
+C:\Users\Katana\source\repos\Parking-Management-System-\ParkingManagementSystem\ParkingManagementSystem\bin\Debug\net6.0\ParkingManagementSystem.deps.json
+C:\Users\Katana\source\repos\Parking-Management-System-\ParkingManagementSystem\ParkingManagementSystem\bin\Debug\net6.0\ParkingManagementSystem.runtimeconfig.json
+C:\Users\Katana\source\repos\Parking-Management-System-\ParkingManagementSystem\ParkingManagementSystem\bin\Debug\net6.0\ParkingManagementSystem.dll
+C:\Users\Katana\source\repos\Parking-Management-System-\ParkingManagementSystem\ParkingManagementSystem\bin\Debug\net6.0\ParkingManagementSystem.pdb
+C:\Users\Katana\source\repos\Parking-Management-System-\ParkingManagementSystem\ParkingManagementSystem\obj\Debug\net6.0\ParkingManagementSystem.genruntimeconfig.cache
+C:\Users\Katana\source\repos\Parking-Management-System-\ParkingManagementSystem\ParkingManagementSystem\obj\Debug\net6.0\ref\ParkingManagementSystem.dll

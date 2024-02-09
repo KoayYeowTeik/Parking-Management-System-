@@ -8,14 +8,14 @@ namespace ParkingManagementSystem
 {
     public interface PPState
     {
-        void approvePass();
+        void approvePass(MonthlyPassCollection collection);
 
 		void enterCarpark();
 
         void exitCarpark();
 
-        void renew();
+        void renew(MonthlyPassCollection collection);
 
-        void terminate(string reason);
+        void terminate(string reason, MonthlyPassCollection collection);
     }
 }

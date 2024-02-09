@@ -10,7 +10,7 @@ namespace ParkingManagementSystem
 	{
 		private ParkingPass myParkingPass;
 
-		public void approvePass()
+		public void approvePass(MonthlyPassCollection collection)
 		{
 			Console.WriteLine("Parking pass is valid");
 		}
@@ -30,30 +30,28 @@ namespace ParkingManagementSystem
 			myParkingPass.isParked = false;
 		}
 
-		public void terminate(string reason)
+		public void terminate(string reason, MonthlyPassCollection collection)
 		{
 			if (myParkingPass.passType == "Daily")
 			{
-				myParkingPass.setState(myParkingPass.TerminatedState);
+				myParkingPass.setState(myParkingPass.TerminatedState, collection);
 				Console.WriteLine(reason);
 			}
 			else if (myParkingPass.passType == "Monthly")
 			{
-				myParkingPass.setState(myParkingPass.TerminatedState);
+				myParkingPass.setState(myParkingPass.TerminatedState, collection);
 				myParkingPass.RefundRemainingPass();
-				//available passes += 1
+				collection.removeFromCurrentPass(myParkingPass);
 				Console.WriteLine(reason);
 			}
-			myParkingPass.setState(myParkingPass.TerminatedState);
-			myParkingPass.RefundRemainingPass();
 		}
 
-		public void renew()
+		public void renew(MonthlyPassCollection collection)
 		{
 			if (myParkingPass.passType == "Monthly")
 			{
-				//available passes += 1
-				myParkingPass.setState(myParkingPass.ProcessingState);
+				collection.removeFromCurrentPass(myParkingPass);
+				myParkingPass.setState(myParkingPass.ProcessingState, collection);
 				Console.WriteLine("Parking pass is renewed and now in processing state.");
 			}
 			Console.WriteLine("You cannot renew your pass yet. It is still a valid pass!");

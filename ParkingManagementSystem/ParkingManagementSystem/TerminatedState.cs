@@ -10,7 +10,7 @@ namespace ParkingManagementSystem
 	{
 		private ParkingPass myParkingPass;
 
-		public void approvePass()
+		public void approvePass(MonthlyPassCollection collection)
 		{
 			Console.WriteLine("Parking pass is terminated");
 		}
@@ -30,12 +30,12 @@ namespace ParkingManagementSystem
 			Console.WriteLine("Parking pass is terminated");
 		}
 
-		public void terminate(string reason)
+		public void terminate(string reason, MonthlyPassCollection collection)
 		{
 			Console.WriteLine("Your parking pass has been terminated already");
 		}
 
-		public void renew()
+		public void renew(MonthlyPassCollection collection)
 		{
 			Console.WriteLine("You cannot renew as your parking pass has been terminated");
 		}
