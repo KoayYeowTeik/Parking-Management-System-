@@ -95,3 +95,18 @@ C:\Users\koayy\source\repos\SE\ParkingManagementSystem\ParkingManagementSystem\o
 C:\Users\koayy\source\repos\SE\ParkingManagementSystem\ParkingManagementSystem\obj\Debug\net6.0\ParkingManagementSystem.pdb
 C:\Users\koayy\source\repos\SE\ParkingManagementSystem\ParkingManagementSystem\obj\Debug\net6.0\ParkingManagementSystem.genruntimeconfig.cache
 C:\Users\koayy\source\repos\SE\ParkingManagementSystem\ParkingManagementSystem\obj\Debug\net6.0\ref\ParkingManagementSystem.dll
+C:\Users\javie\source\repos\New folder (28)\ParkingManagementSystem\ParkingManagementSystem\bin\Debug\net6.0\ParkingManagementSystem.exe
+C:\Users\javie\source\repos\New folder (28)\ParkingManagementSystem\ParkingManagementSystem\bin\Debug\net6.0\ParkingManagementSystem.deps.json
+C:\Users\javie\source\repos\New folder (28)\ParkingManagementSystem\ParkingManagementSystem\bin\Debug\net6.0\ParkingManagementSystem.runtimeconfig.json
+C:\Users\javie\source\repos\New folder (28)\ParkingManagementSystem\ParkingManagementSystem\bin\Debug\net6.0\ParkingManagementSystem.dll
+C:\Users\javie\source\repos\New folder (28)\ParkingManagementSystem\ParkingManagementSystem\bin\Debug\net6.0\ParkingManagementSystem.pdb
+C:\Users\javie\source\repos\New folder (28)\ParkingManagementSystem\ParkingManagementSystem\obj\Debug\net6.0\ParkingManagementSystem.csproj.AssemblyReference.cache
+C:\Users\javie\source\repos\New folder (28)\ParkingManagementSystem\ParkingManagementSystem\obj\Debug\net6.0\ParkingManagementSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\javie\source\repos\New folder (28)\ParkingManagementSystem\ParkingManagementSystem\obj\Debug\net6.0\ParkingManagementSystem.AssemblyInfoInputs.cache
+C:\Users\javie\source\repos\New folder (28)\ParkingManagementSystem\ParkingManagementSystem\obj\Debug\net6.0\ParkingManagementSystem.AssemblyInfo.cs
+C:\Users\javie\source\repos\New folder (28)\ParkingManagementSystem\ParkingManagementSystem\obj\Debug\net6.0\ParkingManagementSystem.csproj.CoreCompileInputs.cache
+C:\Users\javie\source\repos\New folder (28)\ParkingManagementSystem\ParkingManagementSystem\obj\Debug\net6.0\ParkingManagementSystem.dll
+C:\Users\javie\source\repos\New folder (28)\ParkingManagementSystem\ParkingManagementSystem\obj\Debug\net6.0\refint\ParkingManagementSystem.dll
+C:\Users\javie\source\repos\New folder (28)\ParkingManagementSystem\ParkingManagementSystem\obj\Debug\net6.0\ParkingManagementSystem.pdb
+C:\Users\javie\source\repos\New folder (28)\ParkingManagementSystem\ParkingManagementSystem\obj\Debug\net6.0\ParkingManagementSystem.genruntimeconfig.cache
+C:\Users\javie\source\repos\New folder (28)\ParkingManagementSystem\ParkingManagementSystem\obj\Debug\net6.0\ref\ParkingManagementSystem.dll
