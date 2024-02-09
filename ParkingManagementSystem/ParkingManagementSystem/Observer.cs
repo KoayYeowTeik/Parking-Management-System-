@@ -8,6 +8,6 @@ namespace ParkingManagementSystem
 {
     public interface Observer
     {
-        public void update() { }
+        void Update();
     }
 }

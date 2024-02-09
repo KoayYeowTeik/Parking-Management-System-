@@ -6,10 +6,28 @@ using System.Threading.Tasks;
 
 namespace ParkingManagementSystem
 {
-    public interface Subject
+    public class Subject
     {
-        public void NotifyObservers() { }
-        public void AddObserver(int id) { }
-        public void RemoveObserver(int id) { }
+        private List<Monthly> observers = new List<Monthly>();
+
+        public void NotifyObservers()
+        {
+            foreach (var observer in observers)
+            {
+                observer.NotifyObservers();
+            }
+        }
+
+        // Method to add an observer
+        public void AddObserver(Monthly observer)
+        {
+            observers.Add(observer);
+        }
+
+        // Method to remove an observer based on its ID
+        public void RemoveObserver(Monthly observer)
+        {
+            observers.Remove(observer);
+        }
     }
 }

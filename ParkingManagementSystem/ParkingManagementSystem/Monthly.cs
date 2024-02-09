@@ -19,5 +19,6 @@ namespace ParkingManagementSystem
         public void RemoveObservers() { }   
         public List<Monthly> GetWaitingList() { return new List<Monthly>(); }
         public void UpdateStatus() { }
+
     }
 }

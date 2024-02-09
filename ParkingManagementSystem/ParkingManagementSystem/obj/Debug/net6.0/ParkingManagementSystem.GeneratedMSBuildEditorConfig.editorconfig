@@ -8,8 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ParkingManagementSystem
-<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\koayy\source\repos\SE\ParkingManagementSystem\ParkingManagementSystem\
-=======
-build_property.ProjectDir = C:\Users\gerherx\source\repos\Parking-Management-System-a\ParkingManagementSystem\ParkingManagementSystem\
->>>>>>> 3c9e2087eea971e262793184d888fd356927cc6b
