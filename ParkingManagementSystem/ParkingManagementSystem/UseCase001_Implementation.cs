@@ -22,7 +22,7 @@ namespace ParkingManagementSystem
             MaxPassCount = 100; // Example max count
         }
 
-        public void TerminateSeasonPass(User user, int passId, string reason)
+        public void TerminateSeasonPass(User user, int passId, string reason, MonthlyPassCollection collection)
         {
             var pass = user.vehicleList.SelectMany(v => v.ParkingPassList)
                                        .FirstOrDefault(p => p.id == passId);
@@ -40,7 +40,7 @@ namespace ParkingManagementSystem
             }
 
             // Terminate the pass
-            pass.terminate(reason);
+            pass.terminate(reason, collection);
             Console.WriteLine($"Parking pass {pass.id} has been terminated.");
 
             // To check if there are remaining days on the pass

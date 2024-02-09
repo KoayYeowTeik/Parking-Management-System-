@@ -70,7 +70,7 @@ namespace ParkingManagementSystem
                         Console.WriteLine("Enter reason for termination: ");
                         string reason = Console.ReadLine();
 
-                        passManager.TerminateSeasonPass(user, passId, reason);
+                        passManager.TerminateSeasonPass(user, passId, reason, monthlyPassCollection);
                         break;
                     case 2:
                         // Add logic for renewing a season pass
