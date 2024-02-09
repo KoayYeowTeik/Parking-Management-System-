@@ -1,15 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "Vve6CZuTlwNdB9aubdd1/uwxJIou8OlTcbXScYsyHUiOV4v3rWP+NkbOsB2WcHvwEo/5Oh9W72DEc//9OZUh+g==",
+  "dgSpecHash": "pWtU2+VO2hqisBjn4EB9TSvDo64DZFMKfCgl5eSSvl6QV9QxcckRcWFfruX217VeFmDyj57Q7WYoQne65ty7GQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Katana\\source\\repos\\Parking-Management-System-\\ParkingManagementSystem\\ParkingManagementSystem\\ParkingManagementSystem.csproj",
-  "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\Katana\\source\\repos\\Parking-Management-System-\\ParkingManagementSystem\\ParkingManagementSystem\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "projectFilePath": "C:\\Users\\koayy\\source\\repos\\SE\\ParkingManagementSystem\\ParkingManagementSystem\\ParkingManagementSystem.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\koayy\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.19\\microsoft.windowsdesktop.app.ref.6.0.19.nupkg.sha512",
+    "C:\\Users\\koayy\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.19\\microsoft.netcore.app.ref.6.0.19.nupkg.sha512",
+    "C:\\Users\\koayy\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.19\\microsoft.aspnetcore.app.ref.6.0.19.nupkg.sha512",
+    "C:\\Users\\koayy\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.19\\microsoft.netcore.app.host.win-x64.6.0.19.nupkg.sha512"
+  ],
+  "logs": []
 }
