@@ -13,6 +13,7 @@ namespace ParkingManagementSystem
         {
             MonthlyPassCollection monthlyPassCollection= new MonthlyPassCollection();
             SeasonPassManager passManager = new SeasonPassManager();
+            ParkingRecord parkingRecord = new ParkingRecord();
 
             bool exit = false;
             while (!exit)
@@ -22,7 +23,9 @@ namespace ParkingManagementSystem
                 Console.WriteLine("2. Renew Season Pass");
                 Console.WriteLine("3. Make Payment");
                 Console.WriteLine("4. Apply Season Pass");
-                Console.WriteLine("5. Exit");
+                Console.WriteLine("5. Enter Carpark");
+                Console.WriteLine("6. Leave Carpark");
+                Console.WriteLine("8. Exit");
                 Console.Write("Enter your choice: ");
 
                 int choice = Convert.ToInt32(Console.ReadLine());
@@ -83,7 +86,35 @@ namespace ParkingManagementSystem
                         // Add logic for applying for a season pass
                         ApplySeasonPass(monthlyPassCollection);
                         break;
-                    case 5:
+                    case 6:
+                        //logic
+                        parkingRecord.EntryDateTime = DateTime.Now;
+                        //create mock vehicle
+                        parkingRecord.Vehicle = new Vehicle("ABC123", VehicleType.CAR);
+                        //create mock carpark
+                        parkingRecord.Carpark = new Carpark { carparkNumber = 1, location = "lot1" };
+                        parkingRecord.EntryDateTime = DateTime.Now;
+                        parkingRecord.Pass = new ParkingPass { passType = "Daily" }; //assume that parking pass is daily
+                        parkingRecord.Status = "Parked";
+                        parkingRecord.IsParked();
+                        break;
+
+                    case 7:
+                        //logic
+                        if (parkingRecord.EntryDateTime == null)
+                        {
+                            Console.WriteLine("Vehicle has not been parked yet.");
+                            break;
+                        }
+                        else
+                        {
+                            parkingRecord.ExitDateTime = DateTime.Now;
+                            parkingRecord.calculateCharges();
+                            parkingRecord.addRecord();
+                            parkingRecord.IsExited();
+                            break;
+                        }
+                    case 8:
                         exit = true;
                         break;
                     default:
