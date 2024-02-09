@@ -1,15 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bqMvf1pxCA1OlG6JWe1M8JASQtGu+Z3Ici5Smx2Fuf6aapP3f1ckMu7aczBWxkDkGaWA0ffsVyldheyc2j983Q==",
+  "dgSpecHash": "TgrzC2NJmVngl7A6fCAgL/WvRFX1waOJ0AjU/HTiZ4ZSRltfKyD46qbHNEEkuVG9CrlrvUX/k8/vBGTr9MoZEw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\javie\\source\\repos\\New folder (25)\\ParkingManagementSystem\\ParkingManagementSystem\\ParkingManagementSystem.csproj",
+  "projectFilePath": "C:\\Users\\gerherx\\source\\repos\\Parking-Management-System-a\\ParkingManagementSystem\\ParkingManagementSystem\\ParkingManagementSystem.csproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\javie\\source\\repos\\New folder (25)\\ParkingManagementSystem\\ParkingManagementSystem\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }
