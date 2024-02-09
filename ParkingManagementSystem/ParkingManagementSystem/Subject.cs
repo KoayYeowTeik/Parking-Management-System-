@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 
 namespace ParkingManagementSystem
 {
-    public class Subject
-    {
-        private List<Monthly> observers = new List<Monthly>();
+	public interface Subject
+	{
+		void addObserver(Observer o);
+		void removeObserver(Observer o);
+		void notifyObservers();
+		/*private List<Monthly> observers = new List<Monthly>();
 
         public void NotifyObservers()
         {
@@ -28,6 +31,6 @@ namespace ParkingManagementSystem
         public void RemoveObserver(Monthly observer)
         {
             observers.Remove(observer);
-        }
-    }
+        }*/
+	}
 }

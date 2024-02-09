@@ -302,8 +302,8 @@ namespace ParkingManagementSystem
 							//System creates parking pass in processing state
 							int id = 1;
 							ParkingPass parkingPass = new ParkingPass(id, startDate, endDate, passType, userID);
-							collection.addToWaitList(parkingPass);
-							Console.WriteLine("Montly season parking pass has been created");
+							//collection.addToWaitList(parkingPass);
+							Console.WriteLine("Monthly season parking pass has been created");
 						}
                         else if (payment == false)
                         {
