@@ -1,7 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
     "C:\\Users\\Katana\\source\\repos\\Parking-Management-System-\\ParkingManagementSystem\\ParkingManagementSystem\\ParkingManagementSystem.csproj": {}
   },
   "projects": {
@@ -13,22 +12,9 @@
         "projectPath": "C:\\Users\\Katana\\source\\repos\\Parking-Management-System-\\ParkingManagementSystem\\ParkingManagementSystem\\ParkingManagementSystem.csproj",
         "packagesPath": "C:\\Users\\Katana\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Katana\\source\\repos\\Parking-Management-System-\\ParkingManagementSystem\\ParkingManagementSystem\\obj\\",
-=======
-    "C:\\Users\\javie\\source\\repos\\New folder (24)\\ParkingManagementSystem\\ParkingManagementSystem\\ParkingManagementSystem.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\javie\\source\\repos\\New folder (24)\\ParkingManagementSystem\\ParkingManagementSystem\\ParkingManagementSystem.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\javie\\source\\repos\\New folder (24)\\ParkingManagementSystem\\ParkingManagementSystem\\ParkingManagementSystem.csproj",
-        "projectName": "ParkingManagementSystem",
-        "projectPath": "C:\\Users\\javie\\source\\repos\\New folder (24)\\ParkingManagementSystem\\ParkingManagementSystem\\ParkingManagementSystem.csproj",
-        "packagesPath": "C:\\Users\\javie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\javie\\source\\repos\\New folder (24)\\ParkingManagementSystem\\ParkingManagementSystem\\obj\\",
->>>>>>> c1296639401a025d0f785da006fba4feb3d27e31
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\javie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Katana\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -69,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
