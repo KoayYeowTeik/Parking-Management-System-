@@ -39,7 +39,7 @@ namespace ParkingManagementSystem
                         Console.Write("Enter pass ID: ");
                         int passId = Convert.ToInt32(Console.ReadLine());
 
-                        string passType = "Daily";
+                        string passType = "Monthly";
                         // Create a ParkingPass object with the specified ID and other details
                         ParkingPass pass = new ParkingPass(
                             passId,
