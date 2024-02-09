@@ -28,7 +28,15 @@ namespace ParkingManagementSystem
         }
         public bool MakePayment()
         {
-            Console.WriteLine();
+            Console.WriteLine("1. Set Make payment = true\n2. Set Make Payment = false");
+            Console.Write("Enter choice : "); string choice = Console.ReadLine();
+            switch (choice)
+            {
+                case "1":
+                    return true;
+                case "2":
+                    return false;
+            }
             return false;
         }
         public void Update() { }

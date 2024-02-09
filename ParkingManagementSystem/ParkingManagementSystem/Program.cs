@@ -73,7 +73,7 @@ namespace ParkingManagementSystem
                         passManager.TerminateSeasonPass(user, passId, reason, monthlyPassCollection);
                         break;
 
-                    //UC-002 Koay Yeow Teik (Renew Season Pass)
+                    //UC-004 Koay Yeow Teik (Renew Season Pass)
                     case 2:
                         Console.Write("Enter UserID : "); int id = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("Season passes of the user is displayed here");
