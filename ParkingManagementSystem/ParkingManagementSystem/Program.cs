@@ -13,6 +13,7 @@ namespace ParkingManagementSystem
         {
             MonthlyPassCollection monthlyPassCollection= new MonthlyPassCollection();
             SeasonPassManager passManager = new SeasonPassManager();
+            ParkingRecord parkingRecord = new ParkingRecord();
 
             bool exit = false;
             while (!exit)
@@ -22,7 +23,9 @@ namespace ParkingManagementSystem
                 Console.WriteLine("2. Renew Season Pass");
                 Console.WriteLine("3. Make Payment");
                 Console.WriteLine("4. Apply Season Pass");
-                Console.WriteLine("5. Exit");
+                Console.WriteLine("5. Enter Carpark");
+                Console.WriteLine("6. Leave Carpark");
+                Console.WriteLine("8. Exit");
                 Console.Write("Enter your choice: ");
 
                 int choice = Convert.ToInt32(Console.ReadLine());
@@ -122,7 +125,35 @@ namespace ParkingManagementSystem
                         // Add logic for applying for a season pass
                         ApplySeasonPass(monthlyPassCollection);
                         break;
-                    case 5:
+                    case 6:
+                        //logic
+                        parkingRecord.EntryDateTime = DateTime.Now;
+                        //create mock vehicle
+                        parkingRecord.Vehicle = new Vehicle("ABC123", VehicleType.CAR);
+                        //create mock carpark
+                        parkingRecord.Carpark = new Carpark { carparkNumber = 1, location = "lot1" };
+                        parkingRecord.EntryDateTime = DateTime.Now;
+                        parkingRecord.Pass = new ParkingPass { passType = "Daily" }; //assume that parking pass is daily
+                        parkingRecord.Status = "Parked";
+                        parkingRecord.IsParked();
+                        break;
+
+                    case 7:
+                        //logic
+                        if (parkingRecord.EntryDateTime == null)
+                        {
+                            Console.WriteLine("Vehicle has not been parked yet.");
+                            break;
+                        }
+                        else
+                        {
+                            parkingRecord.ExitDateTime = DateTime.Now;
+                            parkingRecord.calculateCharges();
+                            parkingRecord.addRecord();
+                            parkingRecord.IsExited();
+                            break;
+                        }
+                    case 8:
                         exit = true;
                         break;
                     default:
@@ -146,49 +177,85 @@ namespace ParkingManagementSystem
 
 			if (passType == "Daily") // User selects to apply for daily season parking pass
 			{
-				//System prompts for the user to provide their name, student/staff id, username, password, mobile number, start month, end month, payment mode, license plate number, IU number and vehicle type
-				Console.WriteLine("Please input your name, id, username, password, mobile number, start month, end month, payment mode, license plate number, IU number and vehicle type. (Separated by ,) ");
+				Console.WriteLine("Please enter your name: ");
+				string name = Console.ReadLine();
+				Console.WriteLine("Please enter your NP ID: ");
+				int userID = Convert.ToInt32(Console.ReadLine());
+				Console.WriteLine("Please enter your username: ");
+				string username = Console.ReadLine();
+				Console.WriteLine("Please enter your password: ");
+				string password = Console.ReadLine();
+				Console.WriteLine("Please enter your mobile number: ");
+				string mobileNo = Console.ReadLine();
+				Console.WriteLine("Please enter your start month: ");
+				DateTime startDate = Convert.ToDateTime(Console.ReadLine());
+				Console.WriteLine("Please enter your end month: ");
+				DateTime endDate = Convert.ToDateTime(Console.ReadLine());
+				Console.WriteLine("Please enter your payment mode: ");
+				string paymentMethod = Console.ReadLine();
+				Console.WriteLine("Please enter your license plate: ");
+				string licensePlate = Console.ReadLine();
+				Console.WriteLine("Please enter your IU number: ");
+				string iuNumber = Console.ReadLine();
+				Console.WriteLine("Please enter your car type: ");
+				string carType = Console.ReadLine();
 				//User provides the system with all the information required
-				string collatedInfo = Console.ReadLine();
-				string[] applicationInfo = collatedInfo.Split(",");
 
 				//System executes payment use case
-				string paymentMethod = applicationInfo[7];
-				//bool payment = MakePayment(paymentMethod);
+				bool payment = MakePayment();
 
 				//System creates parking pass in processing state
-				int id = 1;
-                int userID = Convert.ToInt32(applicationInfo[1]);
-				DateTime startDate = Convert.ToDateTime(applicationInfo[5]);
-				DateTime endDate = Convert.ToDateTime(applicationInfo[6]);
-				ParkingPass parkingPass = new ParkingPass(id, startDate, endDate, passType, userID);
+                if (payment == true)
+                {
+					int id = 1;
+					ParkingPass parkingPass = new ParkingPass(id, startDate, endDate, passType, userID);
 
-				//System displays successful application
-				Console.WriteLine("Daily season pass has been created");
+					//System displays successful application
+					Console.WriteLine("Daily season pass has been created");
+				}
+                else if (payment == false)
+                {
+                    Console.WriteLine("failed payment");
+                }
 			}
 
 			else if (passType == "Monthly") // User selects to apply for monthly season parking pass
 			{
                 if (collection.availablePasses > 0)//System detects there are available monthly season passes
 				{
-					Console.WriteLine("Please input your name, id, username, password, mobile number, start month, end month, payment mode, license plate number, IU number and vehicle type. (Separated by ,) ");
+                    Console.WriteLine("Please enter your name: ");
+                    string name = Console.ReadLine();
+                    Console.WriteLine("Please enter your NP ID: ");
+                    int userID = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Please enter your username: ");
+                    string username = Console.ReadLine();
+                    Console.WriteLine("Please enter your password: ");
+                    string password = Console.ReadLine();
+                    Console.WriteLine("Please enter your mobile number: ");
+                    string mobileNo = Console.ReadLine();
+                    Console.WriteLine("Please enter your start month: ");
+                    DateTime startDate = Convert.ToDateTime(Console.ReadLine());
+                    Console.WriteLine("Please enter your end month: ");
+                    DateTime endDate = Convert.ToDateTime(Console.ReadLine());
+                    Console.WriteLine("Please enter your payment mode: ");
+                    string paymentMethod = Console.ReadLine();
+                    Console.WriteLine("Please enter your license plate: ");
+                    string licensePlate = Console.ReadLine();
+                    Console.WriteLine("Please enter your IU number: ");
+                    string iuNumber = Console.ReadLine();
+                    Console.WriteLine("Please enter your car type: ");
+                    string carType = Console.ReadLine();
 					//User provides the system with all the information required
-					string collatedInfo = Console.ReadLine();
-					string[] applicationInfo = collatedInfo.Split(",");
 
 					//System executes payment use case
-					string paymentMethod = applicationInfo[7];
                     bool payment = MakePayment();
 
                     if (payment == true)
                     {
 						//System creates parking pass in processing state
 						int id = 1;
-						int userID = Convert.ToInt32(applicationInfo[1]);
-						DateTime startDate = Convert.ToDateTime(applicationInfo[5]);
-						DateTime endDate = Convert.ToDateTime(applicationInfo[6]);
 						ParkingPass parkingPass = new ParkingPass(id, startDate, endDate, passType, userID);
-						Console.WriteLine("Montly season parking pass has been created.");
+						Console.WriteLine("Monthly season parking pass has been created.");
 					}
                     else if (payment == false)
                     {
@@ -203,22 +270,37 @@ namespace ParkingManagementSystem
 
                     if (option == "Y") //User wants to sign up for waiting list
                     {
-						Console.WriteLine("Please input your name, id, username, password, mobile number, start month, end month, payment mode, license plate number, IU number and vehicle type. (Separated by ,) ");
+						Console.WriteLine("Please enter your name: ");
+						string name = Console.ReadLine();
+						Console.WriteLine("Please enter your NP ID: ");
+						int userID = Convert.ToInt32(Console.ReadLine());
+						Console.WriteLine("Please enter your username: ");
+						string username = Console.ReadLine();
+						Console.WriteLine("Please enter your password: ");
+						string password = Console.ReadLine();
+						Console.WriteLine("Please enter your mobile number: ");
+						string mobileNo = Console.ReadLine();
+						Console.WriteLine("Please enter your start month: ");
+						DateTime startDate = Convert.ToDateTime(Console.ReadLine());
+						Console.WriteLine("Please enter your end month: ");
+						DateTime endDate = Convert.ToDateTime(Console.ReadLine());
+						Console.WriteLine("Please enter your payment mode: ");
+						string paymentMethod = Console.ReadLine();
+						Console.WriteLine("Please enter your license plate: ");
+						string licensePlate = Console.ReadLine();
+						Console.WriteLine("Please enter your IU number: ");
+						string iuNumber = Console.ReadLine();
+						Console.WriteLine("Please enter your car type: ");
+						string carType = Console.ReadLine();
 						//User provides the system with all the information required
-						string collatedInfo = Console.ReadLine();
-						string[] applicationInfo = collatedInfo.Split(",");
 
 						//System executes payment use case
-						string paymentMethod = applicationInfo[7];
 						bool payment = MakePayment();
 
                         if (payment == true)
                         {
 							//System creates parking pass in processing state
 							int id = 1;
-							int userID = Convert.ToInt32(applicationInfo[1]);
-							DateTime startDate = Convert.ToDateTime(applicationInfo[5]);
-							DateTime endDate = Convert.ToDateTime(applicationInfo[6]);
 							ParkingPass parkingPass = new ParkingPass(id, startDate, endDate, passType, userID);
 							collection.addToWaitList(parkingPass);
 							Console.WriteLine("Montly season parking pass has been created");
