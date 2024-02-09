@@ -1,15 +1,25 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "Vve6CZuTlwNdB9aubdd1/uwxJIou8OlTcbXScYsyHUiOV4v3rWP+NkbOsB2WcHvwEo/5Oh9W72DEc//9OZUh+g==",
   "success": true,
   "projectFilePath": "C:\\Users\\Katana\\source\\repos\\Parking-Management-System-\\ParkingManagementSystem\\ParkingManagementSystem\\ParkingManagementSystem.csproj",
+=======
+  "dgSpecHash": "bqMvf1pxCA1OlG6JWe1M8JASQtGu+Z3Ici5Smx2Fuf6aapP3f1ckMu7aczBWxkDkGaWA0ffsVyldheyc2j983Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\javie\\source\\repos\\New folder (25)\\ParkingManagementSystem\\ParkingManagementSystem\\ParkingManagementSystem.csproj",
+>>>>>>> dea1fe58df9574c4f0bf0861d58bfb6ac2b7d588
   "expectedPackageFiles": [],
   "logs": [
     {
       "code": "Undefined",
       "level": "Warning",
       "warningLevel": 1,
+<<<<<<< HEAD
       "message": "Problem reading the cache file C:\\Users\\Katana\\source\\repos\\Parking-Management-System-\\ParkingManagementSystem\\ParkingManagementSystem\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+=======
+      "message": "Problem reading the cache file C:\\Users\\javie\\source\\repos\\New folder (25)\\ParkingManagementSystem\\ParkingManagementSystem\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+>>>>>>> dea1fe58df9574c4f0bf0861d58bfb6ac2b7d588
     }
   ]
 }

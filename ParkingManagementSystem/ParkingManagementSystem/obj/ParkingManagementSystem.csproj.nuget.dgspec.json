@@ -1,17 +1,27 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\Katana\\source\\repos\\Parking-Management-System-\\ParkingManagementSystem\\ParkingManagementSystem\\ParkingManagementSystem.csproj": {}
+=======
+    "C:\\Users\\javie\\source\\repos\\New folder (25)\\ParkingManagementSystem\\ParkingManagementSystem\\ParkingManagementSystem.csproj": {}
+>>>>>>> dea1fe58df9574c4f0bf0861d58bfb6ac2b7d588
   },
   "projects": {
-    "C:\\Users\\Katana\\source\\repos\\Parking-Management-System-\\ParkingManagementSystem\\ParkingManagementSystem\\ParkingManagementSystem.csproj": {
+    "C:\\Users\\javie\\source\\repos\\New folder (25)\\ParkingManagementSystem\\ParkingManagementSystem\\ParkingManagementSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Katana\\source\\repos\\Parking-Management-System-\\ParkingManagementSystem\\ParkingManagementSystem\\ParkingManagementSystem.csproj",
+        "projectUniqueName": "C:\\Users\\javie\\source\\repos\\New folder (25)\\ParkingManagementSystem\\ParkingManagementSystem\\ParkingManagementSystem.csproj",
         "projectName": "ParkingManagementSystem",
+<<<<<<< HEAD
         "projectPath": "C:\\Users\\Katana\\source\\repos\\Parking-Management-System-\\ParkingManagementSystem\\ParkingManagementSystem\\ParkingManagementSystem.csproj",
         "packagesPath": "C:\\Users\\Katana\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Katana\\source\\repos\\Parking-Management-System-\\ParkingManagementSystem\\ParkingManagementSystem\\obj\\",
+=======
+        "projectPath": "C:\\Users\\javie\\source\\repos\\New folder (25)\\ParkingManagementSystem\\ParkingManagementSystem\\ParkingManagementSystem.csproj",
+        "packagesPath": "C:\\Users\\javie\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\javie\\source\\repos\\New folder (25)\\ParkingManagementSystem\\ParkingManagementSystem\\obj\\",
+>>>>>>> dea1fe58df9574c4f0bf0861d58bfb6ac2b7d588
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Katana\\AppData\\Roaming\\NuGet\\NuGet.Config",

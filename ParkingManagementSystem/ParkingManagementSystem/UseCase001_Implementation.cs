@@ -43,7 +43,9 @@ namespace ParkingManagementSystem
             pass.terminate(reason);
             Console.WriteLine($"Parking pass {pass.id} has been terminated.");
 
-            if (pass.paymentMode == PaymentMode.DEBIT)
+            // To check if there are remaining days on the pass
+            TimeSpan remainingDuration = pass.endDateTime - DateTime.Now;
+            if (remainingDuration.TotalDays > 0)
             {
                 ProcessRefund(pass);
             }
@@ -52,7 +54,6 @@ namespace ParkingManagementSystem
             SendConfirmation(user);
         }
 
-
         private void ProcessRefund(ParkingPass pass)
         {
             Console.WriteLine("Pass has been refunded");
@@ -60,7 +61,7 @@ namespace ParkingManagementSystem
 
         private void UpdateAvailablePassesCount()
         {
-            // Implement logic to update available passes count
+            // Implementation
         }
 
         private void SendConfirmation(User user)
