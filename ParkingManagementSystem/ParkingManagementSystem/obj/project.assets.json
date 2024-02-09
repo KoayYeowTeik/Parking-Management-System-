@@ -13,19 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Katana\\source\\repos\\Parking-Management-System-\\ParkingManagementSystem\\ParkingManagementSystem\\ParkingManagementSystem.csproj",
       "projectName": "ParkingManagementSystem",
       "projectPath": "C:\\Users\\Katana\\source\\repos\\Parking-Management-System-\\ParkingManagementSystem\\ParkingManagementSystem\\ParkingManagementSystem.csproj",
       "packagesPath": "C:\\Users\\Katana\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Katana\\source\\repos\\Parking-Management-System-\\ParkingManagementSystem\\ParkingManagementSystem\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\javie\\source\\repos\\New folder (25)\\ParkingManagementSystem\\ParkingManagementSystem\\ParkingManagementSystem.csproj",
-      "projectName": "ParkingManagementSystem",
-      "projectPath": "C:\\Users\\javie\\source\\repos\\New folder (25)\\ParkingManagementSystem\\ParkingManagementSystem\\ParkingManagementSystem.csproj",
-      "packagesPath": "C:\\Users\\javie\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\javie\\source\\repos\\New folder (25)\\ParkingManagementSystem\\ParkingManagementSystem\\obj\\",
->>>>>>> dea1fe58df9574c4f0bf0861d58bfb6ac2b7d588
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Katana\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -78,11 +70,7 @@
       "code": "Undefined",
       "level": "Warning",
       "warningLevel": 1,
-<<<<<<< HEAD
       "message": "Problem reading the cache file C:\\Users\\Katana\\source\\repos\\Parking-Management-System-\\ParkingManagementSystem\\ParkingManagementSystem\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-=======
-      "message": "Problem reading the cache file C:\\Users\\javie\\source\\repos\\New folder (25)\\ParkingManagementSystem\\ParkingManagementSystem\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
->>>>>>> dea1fe58df9574c4f0bf0861d58bfb6ac2b7d588
     }
   ]
 }

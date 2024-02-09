@@ -10,7 +10,7 @@ namespace ParkingManagementSystem
 	{
 		private List<ParkingPass> currentPass;
 		private List<ParkingPass> waitingList;
-		public int availablePasses = 100;
+		public int availablePasses = 0;
 
 		public MonthlyPassCollection()
 		{
