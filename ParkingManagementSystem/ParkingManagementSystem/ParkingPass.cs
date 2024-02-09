@@ -49,12 +49,18 @@ namespace ParkingManagementSystem
         public void setState(PPState state, MonthlyPassCollection collection)
         {
             this.state = state;
-            if (state == ExpiredState)
+            if (this.endDateTime < DateTime.Today)
             {
                 if (passType == "Monthly")
                 {
                     collection.removeFromCurrentPass(this);
+                    this.state = ExpiredState;
                     Console.WriteLine("Pass is expired");
+                }
+                else if (passType == "Daily")
+                {
+                    this.state = ExpiredState;
+                    Console.WriteLine("Daily pass expired");
                 }
             }
         }
